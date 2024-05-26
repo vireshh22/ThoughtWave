@@ -13,7 +13,7 @@
 		<br>
 
 		<!-- add form -->
-		<form class="m-5" action="SaveNoteServlet" method="post" >
+		<form class="m-5" action="SaveNote" method="post" >
 		
 			<h1>Add Notes</h1>
 			<div class="form-group">
