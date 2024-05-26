@@ -13,11 +13,12 @@
         <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
 
         <!-- hibernate creates table auto(use update cause if u use create then everytime creates new table by specified name ) -->
-        <property name="hbm2ddl.auto">create</property>
+        <property name="hbm2ddl.auto">update</property>
 
         <!-- shows which query has been fired -->
         <property name="show_sql">true</property>
         
+        <mapping class="com.entities.Note" />
         
     </session-factory>
 
