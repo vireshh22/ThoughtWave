@@ -31,6 +31,16 @@
       <scope>test</scope>
     </dependency>
     
+    <dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version> <!-- You can use the version that matches your server requirements -->
+    <scope>provided</scope>
+</dependency>
+
+
+
+    
   </dependencies>
   <build>
     <finalName>NoteTaker</finalName>
