@@ -14,7 +14,7 @@
       </li>
       
       <li class="nav-item">
-        <a class="nav-link" href="#">Show Notes</a>
+        <a class="nav-link" href="all_notes.jsp">Show Notes</a>
       </li>
 
     </ul>
