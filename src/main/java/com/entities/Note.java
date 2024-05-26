@@ -5,6 +5,7 @@ import java.util.*;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Column;
 
 @Entity
 @Table(name = "notes")
@@ -12,6 +13,8 @@ public class Note {
     @Id
     private int id;
     private String title;
+    
+    @Column(length= 1500)
     private String content;
     private Date addedDate;
 
