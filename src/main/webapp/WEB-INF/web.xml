@@ -16,6 +16,12 @@
   	<description></description>
   	<servlet-class>com.servlets.SaveNote</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>DeleteNote</servlet-name>
+  	<display-name>DeleteNote</display-name>
+  	<description></description>
+  	<servlet-class>com.servlets.DeleteNote</servlet-class>
+  </servlet>
   <!-- <servlet-mapping>
   	<servlet-name>SaveNoteServlet</servlet-name>
   	<url-pattern>/SaveNoteServlet</url-pattern>
@@ -23,5 +29,9 @@
   <servlet-mapping>
   	<servlet-name>SaveNote</servlet-name>
   	<url-pattern>/SaveNote</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DeleteNote</servlet-name>
+  	<url-pattern>/DeleteNote</url-pattern>
   </servlet-mapping>
 </web-app>

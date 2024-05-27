@@ -21,17 +21,28 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        overflow: hidden; /* Hide any overflow from card body */
+    }
+    .card-header {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #2F4F4F; /* Purple background */
+        color: white;
     }
     .card-body {
         flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        overflow-y: auto; /* Enable vertical scrolling for card body */
+        padding: 10px;
     }
-    .card-buttons {
+    .card-footer {
         display: flex;
-        justify-content: center;
-        margin-top: auto;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #f8f9fa; /* Light gray background */
+        border-top: 1px solid #ccc; /* Top border to separate footer from body */
     }
 </style>
 </head>
@@ -57,7 +68,7 @@
             %>    
             <div class="col-md-4 col-sm-6 mt-3"> 
                 <div class="card shadow-sm h-100">
-                    <div class="card-header d-flex align-items-center purple text-white">
+                    <div class="card-header">
                         <div class="col-4 p-0 text-center">
                             <img src="images/pen.png" class="card-img-top img-fluid white" style="max-width: 80px;" alt="Image"/>
                         </div>
@@ -66,11 +77,13 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <p class="card-text"><%= note.getContent() %></p>
-                        <div class="card-buttons">
-                            <a href="#" class="btn btn-danger mr-3">Delete</a>
-                            <a href="#" class="btn btn-primary">Update</a>
+                        <div class="card-body-content">
+                            <p class="card-text"><%= note.getContent() %></p>
                         </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="DeleteNote?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
+                        <a href="#" class="btn btn-primary">Update</a>
                     </div>
                 </div>
             </div>
