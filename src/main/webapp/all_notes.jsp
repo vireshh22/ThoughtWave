@@ -83,7 +83,7 @@
                     </div>
                     <div class="card-footer">
                         <a href="DeleteNote?note_id=<%= note.getId() %>" class="btn btn-danger">Delete</a>
-                        <a href="#" class="btn btn-primary">Update</a>
+                        <a href="edit.jsp?note_id=<%= note.getId() %>" class="btn btn-primary">Update</a>
                     </div>
                 </div>
             </div>
