@@ -13,3 +13,6 @@ View Notes Page
 
 Update Note Page
 ![Update_note](https://github.com/vireshh22/ThoughtWave/assets/150522535/d021cbb6-a1b5-4836-82f7-6094120f8318)
+
+
+- Viresh Hiremath

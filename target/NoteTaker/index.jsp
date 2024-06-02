@@ -5,19 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    
+    <title>Home</title>
+    <%@include file="all_js.jsp" %>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    <div class="container-fluid p-0 m-0">
+        <%@include file="navbar.jsp" %>
+        
+        <br>
+        
+        <div class="card m-3 py-3">
+        	<img alt="" class="img-fluid mx-auto" style="max-width:400px;" src="images/pen.png" />
+        	<h1 class="text-primary text-uppercase text-center">Start Taking Notes..</h1>
+        	<div class="container text-center">
+        		
+        		<a href="add_notes.jsp" class="btn btn-outline-primary text-center">Start</a>
+        	</div>
+        </div>
+    </div>
 
   </body>
 </html>
